@@ -20,6 +20,7 @@ export class ThingsService {
     all(): Observable<Array<string>> {
         this._thingsHttpService.all()
             .subscribe((upToDateThings) => {
+                this.things = upToDateThings;
                 this.things$.next(upToDateThings);
             });
 
