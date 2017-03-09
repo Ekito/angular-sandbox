@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+
+    * {
+        max-width: 900px;
+    }
+
+    md-card {
+        width: 100%;
+    }
+}
