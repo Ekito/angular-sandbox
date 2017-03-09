@@ -6,7 +6,7 @@ import { ThingsListComponent } from './things-list.component';
 // Route Configuration
 export const thingsRoutes: Routes = [
     {
-        path: 'things',
+        path: '',
         component: ThingsListComponent
     },
 

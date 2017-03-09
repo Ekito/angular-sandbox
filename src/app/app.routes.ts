@@ -5,14 +5,18 @@ import { HomeComponent } from './+home/home.component';
 
 // Route Configuration
 export const appRoutes: Routes = [
-  {
-      path: '',
-      component: HomeComponent
-  },
-  {
-    path: '**',
-    redirectTo: '/',
-  }
+    {
+        path: '',
+        component: HomeComponent
+    },
+    {
+        path: 'things',
+        loadChildren: 'app/+things/things.module#ThingsModule'
+    },
+    {
+        path: '**',
+        redirectTo: '/',
+    }
 ];
 
 export const appRoutingProviders: any[] = [
