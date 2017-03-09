@@ -1,6 +1,6 @@
 import { Angular2SandboxPage } from './app.po';
 
-describe('angular2-sandbox App', function() {
+describe('angular-sandbox App', function() {
   let page: Angular2SandboxPage;
 
   beforeEach(() => {
