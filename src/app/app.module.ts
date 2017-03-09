@@ -5,22 +5,20 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { ThingsListComponent, ThingsService, ThingsHttpService } from './+things';
+import { ThingsModule } from './+things';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ThingsListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    ThingsModule
   ],
   providers: [
-    ThingsService,
-    ThingsHttpService
   ],
   bootstrap: [AppComponent]
 })
