@@ -11,7 +11,7 @@ import { routing,
 import { AppComponent } from './app.component';
 import { HomeComponent } from './+home';
 
-import { Auth } from './shared/auth';
+import { Auth, AuthGuard } from './shared/auth';
 
 @NgModule({
     declarations: [
@@ -27,7 +27,8 @@ import { Auth } from './shared/auth';
     ],
     providers: [
         appRoutingProviders,
-        Auth
+        Auth,
+        AuthGuard,
     ],
     bootstrap: [AppComponent]
 })
