@@ -1,29 +1,13 @@
-<!--<md-layout>-->
-
 <md-toolbar color="primary">
-  <div></div>
-  <div style="text-align:center;width:100%;">Angular2Sandbox</div>
-  <div style="float:right">
-    <span *ngIf="profile">{{ profile.name }}</span>
+  <div fxLayout="row">
+    <div fxFlex="67">Angular2Sandbox</div>
+    <div fxFlex="33">
+        <span *ngIf="profile">{{ profile.name }}</span>
+    </div>
   </div>
 </md-toolbar>
 
-<section class="main">
-  <md-card>
-    <md-card-title>Authentication</md-card-title>
-    <md-card-content>
-        <div *ngIf="profile">
-            <div>Hi {{ profile.name }}</div>
-            <div>{{title}}</div>
-        </div>
-    </md-card-content>
-    <md-card-actions>
-      <button md-raised-button color="accent" *ngIf="!authenticated" (click)="login()">Login</button>
-      <button md-raised-button color="primary" *ngIf="authenticated" (click)="logout()">Logout</button>
-    </md-card-actions>
-  </md-card>
-  <md-card>
-    <app-things-list></app-things-list>
-  </md-card>
-</section>
-<!--</md-layout>-->
+<main>
+    <router-outlet></router-outlet>
+</main>
+  
