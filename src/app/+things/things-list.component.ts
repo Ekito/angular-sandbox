@@ -3,7 +3,7 @@ import { ThingsService } from './things.service';
 
 @Component({
   selector: 'app-things-list',
-  templateUrl: 'things-list.component.html',
+  templateUrl: 'things-list.component.html'
 })
 export class ThingsListComponent implements OnInit {
 

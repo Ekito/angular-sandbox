@@ -1,27 +1,11 @@
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-
-    * {
-        max-width: 900px;
-    }
-
-    md-card {
-        width: 100%;
-        margin: 10px 0;
-        text-align: center;
-
-        md-card-content {
-            min-height: 40px;
-        }
-    }
+.title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
 }
 
-md-toolbar {
-    div {
-        min-width: 150px;
-    }
+.username {
+    position: relative;
+    left: 60%;
 }

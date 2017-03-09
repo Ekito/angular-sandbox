@@ -1,13 +1,13 @@
 <md-toolbar color="primary">
-  <div fxLayout="row">
-    <div fxFlex="67">Angular2Sandbox</div>
-    <div fxFlex="33">
-        <span *ngIf="profile">{{ profile.name }}</span>
+  <md-toolbar color="primary">
+    <div class="title" routerLink="">Angular2Sandbox</div>
+    <div class="username">
+      <span *ngIf="profile">{{ profile.name }}</span>
     </div>
-  </div>
+  </md-toolbar>
+
 </md-toolbar>
 
 <main>
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </main>
-  
