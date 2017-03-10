@@ -4,8 +4,8 @@ import { Observable, ReplaySubject } from 'rxjs/Rx';
 import { IUser } from './user.model';
 
 const userMock = {
-    name: 'Julien Boulay',
-    email: 'jboulay@ekito.fr'
+    name: 'John Doe',
+    email: 'jdoe@ekito.fr'
 }
 
 @Injectable()
