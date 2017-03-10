@@ -5,7 +5,6 @@ import { MaterialModule } from '@angular/material';
 import { routing } from './things.routes';
 import { ThingsListComponent } from './things-list.component';
 import { ThingsService } from './things.service';
-import { ThingsHttpService } from './things-http.service';
 
 
 @NgModule({
@@ -21,7 +20,6 @@ import { ThingsHttpService } from './things-http.service';
         routing,
     ],
     providers: [
-        ThingsHttpService,
         ThingsService
     ]
 })
