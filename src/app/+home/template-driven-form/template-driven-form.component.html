@@ -1,0 +1,8 @@
+<form (ngSubmit)="submit()" #userForm="ngForm">
+  <div>
+    <md-input-container>
+      <input mdInput placeholder="John Doe" name="username" [(ngModel)]="username" required>
+    </md-input-container>
+  </div>
+  <button md-raised-button color="accent" [disabled]="!userForm.valid">Submit</button>
+</form>
